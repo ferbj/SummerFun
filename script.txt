@@ -1,0 +1,9 @@
+attachSecretMessage(marker, 
+                          "<div><strong>"+ beach.nombre + "</strong></div>" +
+                          "<hr><div>Temperatura: " + beach.temp + "</div>" +
+                          "<div>Velocidad del Viento: " + beach.velviento + "</div>" +
+                          "<div>Direccion del Viento: " + beach.dirvie + "</div>" +
+                          "<div>Humedad: " + beach.hum + "</div>" +
+                          "<div>Presion: " + beach.pres + "</div>");
+            });
+    

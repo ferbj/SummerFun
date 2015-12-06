@@ -1,0 +1,339 @@
+
+.total{
+  padding: 0;
+  font-size: 16px;
+  padding-top: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+
+  padding: 0;
+  margin: 0;
+}
+
+.navega{
+  margin: 0;
+}
+
+.nave_img a{
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nave_img img{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.home{
+  margin: 0;
+  padding: 0;
+  background: url(../imagenes/home.jpg) no-repeat ;
+  height: 930px;
+}
+
+.princ-uv{
+  background: rgba(209,193,52,0.1);
+  height: 930px;
+  padding-top: 150px;
+}
+
+.princ-uv:hover{
+  background: rgba(209,193,52,1);
+  color: white;
+}
+
+.princ-uv-btn{
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.princ-uv-btn button{
+  background: #353535;
+}
+
+.princ-marea{
+  background: rgba(25,101,163, 0.1);
+  height: 930px;
+  padding-top: 150px;
+}
+
+.princ-marea:hover{
+  background: rgba(25,101,163, 1);
+  color: white;
+}
+
+.princ-marea-btn{
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.princ-marea-btn button{
+  background: #353535;
+}
+
+.princ-salvavidas{
+  background: rgba(160,26,67, 0.1);
+  height: 930px;
+  padding-top: 150px;
+}
+
+.princ-salvavidas:hover{
+  background: rgba(160,26,67, 1);
+  color: white;
+}
+
+.princ-salvavidas-btn{
+
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.princ-salvavidas-btn button{
+  background: #353535;
+}
+
+.datos_api{
+
+  padding: 0px;
+  border-left: 20px solid  rgba(209,193,52,1);
+  margin: 0;
+}
+
+.datos_api_nombre{
+  margin-top: 40px;
+
+}
+
+.datos_api_nombre h1{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.datos_api_1{
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+
+}
+
+.datos_api_1 h1{
+  text-align: center;
+}
+
+.datos_api_1 p{
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.datos_api_2{
+  margin-bottom: 50px;
+}
+
+.datos_api_playas figure{
+
+  margin: 0;
+}
+
+.datos_api_playas ul{
+
+  margin: 0;
+  padding-left: 50px;
+}
+
+.datos_api_playas li{
+
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+
+}
+
+.datos_api_playas h4{
+
+  font-size: 1.8em;
+  margin: 0;
+  margin-top: 3px;
+}
+
+.datos_api_beneficios ul{
+
+  margin: 0;
+  padding-left: 50px;
+}
+
+.datos_api_beneficios li{
+
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+
+}
+
+.datos_api_beneficios h4{
+
+  font-size: 1.8em;
+  margin: 0;
+  margin-top: 3px;
+}
+
+
+.mapa{
+  height: 915px;
+  border-left: 20px solid rgba(25,101,163, 1);
+  margin: 0;
+  padding: 0px;
+}
+
+.mapa-google{
+  padding: 0;
+  margin: 0;
+
+}
+
+.informacion{
+  height: 200px;
+  border-left: 20px solid  rgba(160,26,67, 1);
+  margin: 0;
+}
+
+.no-saludable{
+  border-left: 20px solid  rgba(53,53,53,1);
+  margin: 0;
+  padding: 0;
+  background: url(../imagenes/botella-playa.jpg) no-repeat ;
+  height: 750px;
+
+}
+
+.no-saludable-conten{
+  background: rgba(53,53,53,0.6);
+  height: 750px;
+  margin: 0;
+  color: white;
+}
+
+.no-saludable-conten-titulo{
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.no-saludable-conten-titulo h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.no-saludable-conten div p{
+  font-size: 1em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.no-saludable-conten button{
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 60px;
+  background: rgba(160,26,67, 1);
+}
+
+.colaboradores{
+
+  margin: 0;
+
+}
+
+.colaboradores-titulo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.colaboradores-titulo h1{
+  font-size: 4em;
+
+}
+
+.apoyo-titulo h1{
+  font-size: 3em;
+}
+
+.colaboradores-fila{
+}
+
+.colaboradores-persona{
+  padding-bottom: 50px;
+
+}
+
+.colaboradores-persona img{
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.colaboradores-persona h3{
+  padding: 10px;
+  background: #353535;
+  color: white;
+
+}
+
+.colaboradores-persona p{
+
+  margin-bottom: 50px;
+}
+
+.colaboradores-ins{
+  margin-bottom: 50px;
+}
+
+.colaboradores-ins img{
+  width: 200px;
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+footer{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: #101010;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  color: #9d9d9d;
+}
+
+footer a{
+  color: #9d9d9d;
+}
+
+footer a:hover{
+  color: white;
+}
+
+@media only screen and (max-width: 620px)  {
+  .home{
+    height: auto;
+    background: none;
+
+  }
+
+  .princ-uv, .princ-marea, .princ-salvavidas{
+    height: auto;
+    padding: 0;
+    padding-top: 10px;
+
+  }
+
+  .princ-uv-icon, .princ-marea-icon, .princ-salvavidas-icon{
+    display: none;
+  }
+}
