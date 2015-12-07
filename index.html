@@ -203,7 +203,7 @@
                 <br> Evita poner en riesgo tu salud, con enfermedades como la conjuntivitis, males a la piel como hongos y problemas gastrointestinales.
               </p>
           </div>
-          <a href="http://localhost/sfinal/nosaludable.html"><button type="button" class="col-xs-6 col-xs-offset-3 btn btn-danger">CONOCE CUÁLES SON</button></a>
+          <a href="nosaludable.html"><button type="button" class="col-xs-6 col-xs-offset-3 btn btn-danger">CONOCE CUÁLES SON</button></a>
         </section>
       </section>
 
@@ -359,10 +359,10 @@
         $scope.buscar = function(){
         directionsDisplay = new google.maps.DirectionsRenderer();
 
-        var image = 'http://localhost/sf/imagenes/icon/beach.png';
+        var image = 'imagenes/icon/beach.png';
 
         $.ajax({
-          url: "http://localhost/sf/rest.php?id=" + $scope.data.selectedOption.id
+          url: "http://localhost/sfinal/rest.php?id=" + $scope.data.selectedOption.id
         }).done(function(data) {
         $.each(data.beaches, function(i, beach){
           var Center = new google.maps.LatLng(beach.lat, beach.lng); //Punto Centro
