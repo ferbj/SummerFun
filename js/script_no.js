@@ -11,11 +11,11 @@ function initialize(){
   }
   
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var image = 'http://localhost/sf/imagenes/icon/no_beach.png';
+  let url = location.origin
+  var image = url + '/imagenes/icon/no_beach.png';
 
   $.ajax({
-    url: "http://localhost/sf/rest_no.php"
+    url: url +"/rest_no.php"
   }).done(function(data) {
       $.each(data.beaches, function(i, beach){
         var position = {lat: beach.lat, lng: beach.lng};

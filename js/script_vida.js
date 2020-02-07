@@ -11,11 +11,11 @@ function initialize(){
   }
   
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var image = 'http://localhost/sf/imagenes/icon/vida.png';
+  let url = location.origin
+  var image = url + '/imagenes/icon/vida.png';
 
   $.ajax({
-    url: "http://localhost/sf/rest_vida.php"
+    url: url +"/rest_vida.php"
   }).done(function(data) {
       $.each(data.vidas, function(i, vida){
         var position = {lat: vida.lat, lng: vida.lng};

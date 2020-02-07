@@ -358,11 +358,11 @@
 
         $scope.buscar = function(){
         directionsDisplay = new google.maps.DirectionsRenderer();
-
-        var image = 'imagenes/icon/beach.png';
-
+        let url = location.origin
+        var image = url + '/imagenes/icon/beach.png';
+        
         $.ajax({
-          url: "http://localhost/sfinal/rest.php?id=" + $scope.data.selectedOption.id
+          url: url+ "/rest.php?id=" + $scope.data.selectedOption.id
         }).done(function(data) {
         $.each(data.beaches, function(i, beach){
           var Center = new google.maps.LatLng(beach.lat, beach.lng); //Punto Centro
