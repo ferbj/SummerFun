@@ -322,8 +322,7 @@
     <!-- ANGULAR -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript">
-      var miApp = angular.module('app',[]);
-
+      const miApp = angular.module('app',[]);
       miApp.controller('control', ['$scope', function($scope){
         $scope.data = {
           availableOptions: [
@@ -357,25 +356,29 @@
 
 
         $scope.buscar = function(){
+          
         directionsDisplay = new google.maps.DirectionsRenderer();
         let url = location.origin
-        var image = url + '/imagenes/icon/beach.png';
+        let image = url + '/imagenes/icon/beach.png';
         
         $.ajax({
-          url: url+ "/rest.php?id=" + $scope.data.selectedOption.id
+          type: "post",
+          data : {'id' :  $scope.data.selectedOption.id } ,
+          url: url+ "/rest.php" 
         }).done(function(data) {
+
         $.each(data.beaches, function(i, beach){
-          var Center = new google.maps.LatLng(beach.lat, beach.lng); //Punto Centro
-          var mapOptions = {
+          let Center = new google.maps.LatLng(beach.lat, beach.lng); //Punto Centro
+          let mapOptions = {
           zoom: 12,
           center: Center
         }
 
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-          var position = {lat: beach.lat, lng: beach.lng};
-          var title = beach.nombre;
-          var marker = new google.maps.Marker({
+          let position = {lat: beach.lat, lng: beach.lng};
+          let title = beach.nombre;
+          let marker = new google.maps.Marker({
           map: map,
           position: position,
           title: title,
@@ -392,6 +395,7 @@
             });
 
          });
+
         }
 
       }]);

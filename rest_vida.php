@@ -8,7 +8,7 @@ $lang='es';
 $units='metric';
 
 //$idvida = -1;
-if(isset($_GET['id'])) $idvida = $_GET['id'];
+if(isset($_POST['id'])) $idvida = $_POST['id'];
 //$json = "";
 
 $json = '{ "vidas" : [';
@@ -40,7 +40,7 @@ $vidas = array(
 			array('lat'=> '-7.923984','lng'=> '-79.307979','nombre'=> 'Salvataje El Brujo')
 		);
 
-if(!isset($_GET['id']))
+if(!isset($_POST['id']))
 	foreach($vidas as $id => $vida){
 		$owm = new OpenWeatherMap();
 		$vida = $vidas[$id];

@@ -8,7 +8,7 @@ $lang='es';
 $units='metric';
 
 //$idplaya = -1;
-if(isset($_GET['id'])) $idplaya = $_GET['id'];
+if(isset($_POST['id'])) $idplaya = $_POST['id'];
 //$json = "";
 
 $json = '{ "beaches" : [';
@@ -31,7 +31,7 @@ $beaches = array(
 			array('lat'=> '-8.0832702','lng'=> '-79.1254578','nombre'=> 'Huankarute')
 		);
 
-if(!isset($_GET['id']))
+if(!isset($_POST['id']))
 	foreach($beaches as $id => $beach){
 		$owm = new OpenWeatherMap();
 		$beach = $beaches[$id];

@@ -12,9 +12,10 @@ function initialize(){
   
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   let url = location.origin
-  var image = url + '/imagenes/icon/vida.png';
+  let image = url + '/imagenes/icon/vida.png';
 
   $.ajax({
+    type:"post",
     url: url +"/rest_vida.php"
   }).done(function(data) {
       $.each(data.vidas, function(i, vida){

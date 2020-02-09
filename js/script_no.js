@@ -15,6 +15,7 @@ function initialize(){
   var image = url + '/imagenes/icon/no_beach.png';
 
   $.ajax({
+    type:"post",
     url: url +"/rest_no.php"
   }).done(function(data) {
       $.each(data.beaches, function(i, beach){
